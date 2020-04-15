@@ -49,7 +49,7 @@ pipeline
    
 	   gsutil cp -r * gs://aishwarya_deshpande
 	   
-	   gsutil setmeta -h "content-type: image/svg+xml" gs://aishwarya_deshpande/static/media/*.svg
+
 	   
 	  '''
 	 }
