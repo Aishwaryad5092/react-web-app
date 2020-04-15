@@ -46,10 +46,7 @@ pipeline
 	   tar -xvf frontend-${BUILD_NUMBER}.tar
 	   rm -rf  frontend-${BUILD_NUMBER}.tar
 	   ls -ltr
-	   gsutil acl ch -u AllUsers:R gs://aishwarya_deshpande
-	   gsutil defacl set public-read gs://aishwarya_deshpande
-	   gsutil web set -m index.html -e index.html gs://aishwarya_deshpande
-	   
+   
 	   gsutil cp -r * gs://aishwarya_deshpande
 	   
 	   gsutil setmeta -h "content-type: image/svg+xml" gs://aishwarya_deshpande/static/media/*.svg
